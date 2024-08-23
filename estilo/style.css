@@ -1,12 +1,18 @@
 
+
 @charset "UTF-8";
 
 /* font importadas fonts.google */
 
-@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
 
 /* Variáveis */
 
@@ -19,13 +25,11 @@
 
     /* fontes */
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --font-header-h1:"Sedan", serif;
-    --font-main: "Open Sans", sans-serif;
+    --font-header-h1:'Passion One', cursive;
+    --font-main:  'Sriracha', cursive;
     
 }
  
-
-
     /* CONFIGS do BODY */
 
 body {
@@ -38,8 +42,9 @@ header {
     background-color: var(--cor1);
     color: white;
     text-align: center;
-    padding: 5px;
-    margin: -8px -7px 10px -8px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 header > h1 {
@@ -48,8 +53,7 @@ header > h1 {
 }
 
 header > p {
-    margin-top: -52px;
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
     /* CONFIGS da Main*/
@@ -57,9 +61,15 @@ header > p {
 main {
     background-color: white;
     font:italic 40px var(--font-main);
-    font-weight: 400;
-    padding: 20px 40px 35px 50px;
+    font-weight: 500;
+    padding: 30px 30px;
+    /*padding: 20px 40px 35px 50px;*/
     margin: 1px;
+}
+
+main > p {
+    padding-bottom: 30px;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.103);
 }
 
     /* CONFIGS das Imagens de Fundo das sections */
@@ -69,8 +79,8 @@ main > section#wp1 {
     background: url('../imagens/background001.jpg') right center fixed ;
     background-size: cover;
     box-shadow: 9px 0px 2px rgba(0, 0, 0, 0.719);
-    margin: 130px -48px 130px -59px;
-    padding: 20px;
+    margin: 130px -31px 70px -31px;
+    padding: 10px; 
 }
 
 main > section#wp1 > div#q1 {
@@ -81,17 +91,20 @@ main > section#wp1 > div#q1 {
     font-weight: 700;
     color: white;
     width: 500px;
+    
     padding: 1px 0px 1px 7px;
     margin: 40px 15px;
     
 }
+
+
 
 main > section#wp2 {
     position: relative;
     background: url('../imagens/background002.jpg') right bottom fixed ;
     background-size: cover;
     box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.103);
-    margin: 130px -48px 0px -59px;
+    margin: 130px -31px 0px -31px;
     padding: 20px;
 }
 
@@ -100,7 +113,7 @@ main > section#wp2 > div#q2 {
     box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.103);
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.103);
     font: italic 40px var(--font-main);
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     width: 500px;
     padding: 1px 0px 1px 7px;
@@ -113,8 +126,8 @@ footer {
     font: normal 20px var(--font-padrao);
     color: white;
     text-align: center;
-    padding: 2px;
-    margin: 0px -8px -8px -8px;
+    padding: 6px;
+    margin: 30px 0px 0px 0px;
 }
 
 
