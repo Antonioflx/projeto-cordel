@@ -35,6 +35,7 @@
 body {
     background-color: var(--cor0);
     font: normal 20px var(--font-padrao);
+    min-height: 100vh;
 }
 
     /* CONFIGS do Header*/ 
