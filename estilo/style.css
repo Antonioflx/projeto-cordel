@@ -20,7 +20,7 @@
     /* cores */
     --cor0: white;
     --cor1: black;
-    --cor-div1: #011201;
+    --cor-div1: #01120160; /*caso queira voltar a cor antiga. #011201*/
     --cor-div2: #3b3f34c2;
 
     /* fontes */
@@ -84,7 +84,7 @@ main > section#wp1 {
 }
 
 main > section#wp1 > div#q1 {
-    background-color: var(--cor-div1);
+     background-color: var(--cor-div1); 
     box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.103);
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.103);
     font: italic 40px var(--font-main);
