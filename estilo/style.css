@@ -1,0 +1,130 @@
+
+@charset "UTF-8";
+
+/* font importadas fonts.google */
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Variáveis */
+
+:root {
+    /* cores */
+    --cor0: white;
+    --cor1: black;
+    --cor-div1: #011201;
+    --cor-div2: #3b3f34c2;
+
+    /* fontes */
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-header-h1:"Sedan", serif;
+    --font-main: "Open Sans", sans-serif;
+    
+}
+ 
+
+
+    /* CONFIGS do BODY */
+
+body {
+    background-color: var(--cor0);
+    font: normal 20px var(--font-padrao);
+}
+
+    /* CONFIGS do Header*/ 
+header {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: -8px -7px 10px -8px;
+}
+
+header > h1 {
+    font: normal 95px var(--font-header-h1);
+    font-weight: 500;
+}
+
+header > p {
+    margin-top: -52px;
+    padding: 10px 0px 20px 0px;
+}
+
+    /* CONFIGS da Main*/
+
+main {
+    background-color: white;
+    font:italic 40px var(--font-main);
+    font-weight: 400;
+    padding: 20px 40px 35px 50px;
+    margin: 1px;
+}
+
+    /* CONFIGS das Imagens de Fundo das sections */
+
+main > section#wp1 {
+    position: relative;
+    background: url('../imagens/background001.jpg') right center fixed ;
+    background-size: cover;
+    box-shadow: 9px 0px 2px rgba(0, 0, 0, 0.719);
+    margin: 130px -48px 130px -59px;
+    padding: 20px;
+}
+
+main > section#wp1 > div#q1 {
+    background-color: var(--cor-div1);
+    box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.103);
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.103);
+    font: italic 40px var(--font-main);
+    font-weight: 700;
+    color: white;
+    width: 500px;
+    padding: 1px 0px 1px 7px;
+    margin: 40px 15px;
+    
+}
+
+main > section#wp2 {
+    position: relative;
+    background: url('../imagens/background002.jpg') right bottom fixed ;
+    background-size: cover;
+    box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.103);
+    margin: 130px -48px 0px -59px;
+    padding: 20px;
+}
+
+main > section#wp2 > div#q2 {
+    background-color: var(--cor-div2);
+    box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.103);
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.103);
+    font: italic 40px var(--font-main);
+    font-weight: 700;
+    color: white;
+    width: 500px;
+    padding: 1px 0px 1px 7px;
+    margin: 40px 15px;
+} 
+    /* CONFIGS do Footer */
+
+footer {
+    background-color: black;
+    font: normal 20px var(--font-padrao);
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin: 0px -8px -8px -8px;
+}
+
+
+    /* CONFIGS dos Links */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
